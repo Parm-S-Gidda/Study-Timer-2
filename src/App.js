@@ -25,7 +25,7 @@ function App() {
 
     
 
-    if(buttonState == 1){
+    if(buttonState === 1){
 
  
 
@@ -111,17 +111,17 @@ function App() {
     }, 750);
 
 
-    if(period == 1 || period == 3 || period == 5 || period == 7 || period == 9){
+    if(period === 1 || period === 3 || period === 5 || period === 7 || period === 9){
       setCurrentTimeSeconds(1499)
       setCurrentTime("25:00")
       setItervalSpeed(1000)
     }
-    else if(period == 2 || period == 4 || period == 6){
+    else if(period === 2 || period === 4 || period === 6){
       setCurrentTimeSeconds(299)
       setCurrentTime("05:00")
       setItervalSpeed(1000)
     }
-    else if(period == 8){
+    else if(period === 8){
       setCurrentTimeSeconds(1799)
       setCurrentTime("30:00")
       setItervalSpeed(1000)
@@ -134,7 +134,7 @@ function App() {
     let currentBar = document.getElementById("indic" + (period -1))
     currentBar.style.backgroundColor = "rgba(255, 255, 255, 0.625)";
 
-    if(period == 9){
+    if(period === 9){
       setPeriod(1)
     }
 
@@ -143,10 +143,10 @@ function App() {
 
    const changeButton = () => {
 
-    if(buttonState == 0){
+    if(buttonState === 0){
       setButtonState(1)   
 
-      if(period == 1){
+      if(period === 1){
         setPeriod(2)
  
     
