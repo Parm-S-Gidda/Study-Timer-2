@@ -8,16 +8,23 @@
   background-size: cover; 
   background-position: center; 
   background-repeat: no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
  
 }
 
 #time {
 
   color: white;
-  font-size:600px;
+  font-size:400px;
+  
   margin-top: 5%;
   margin-bottom: 0px;
- 
+ text-align: center;
+letter-spacing: -30px;
+ font-family: monospace;
 
 
 }

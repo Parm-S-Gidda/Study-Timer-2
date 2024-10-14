@@ -8,16 +8,19 @@ function App() {
 
   const [buttonState, setButtonState] = useState(0);
 
-  const [currentTimeSeconds, setCurrentTimeSeconds] = useState(1500);
+  const [currentTimeSeconds, setCurrentTimeSeconds] = useState(1499);
 
   const [currentTime, setCurrentTime] = useState("25:00");
   const [period, setPeriod] = useState(2);
+
+  const [intervalSpeed, setItervalSpeed] = useState(1000)
 
   let minutes = 0;
   let seconds = 0;
 
   useEffect(() => {
 
+ 
   const interval = setInterval(() => {
 
     
@@ -68,26 +71,60 @@ function App() {
       }
 
     }
-  }, 1000);
+  }, intervalSpeed);
 
   return () => clearInterval(interval);
   },);
 
+  useEffect(() => {
+    const handleKeyPress = (event) => {
+      if (event.key === '1') {
+        setItervalSpeed(1)
+      }
+      else if(event.key==='2'){
+        setItervalSpeed(1000)
+
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyPress);
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyPress);
+    };
+  },);
+
   const changeTimeDuration = () => {
 
+    var currentBar = document.getElementById("App");
+    currentBar.style.filter = "invert(1)";
+    setTimeout(() => {
+        currentBar.style.filter = "invert(0)";
+    }, 250); 
+    
+    setTimeout(() => {
+        currentBar.style.filter = "invert(1)";
+    }, 500); 
+    
+    setTimeout(() => {
+        currentBar.style.filter = "invert(0)";
+    }, 750);
 
 
     if(period == 1 || period == 3 || period == 5 || period == 7 || period == 9){
-      setCurrentTimeSeconds(1500)
+      setCurrentTimeSeconds(1499)
       setCurrentTime("25:00")
+      setItervalSpeed(1000)
     }
     else if(period == 2 || period == 4 || period == 6){
-      setCurrentTimeSeconds(300)
+      setCurrentTimeSeconds(299)
       setCurrentTime("05:00")
+      setItervalSpeed(1000)
     }
     else if(period == 8){
-      setCurrentTimeSeconds(1800)
+      setCurrentTimeSeconds(1799)
       setCurrentTime("30:00")
+      setItervalSpeed(1000)
 
     }
   }
@@ -137,7 +174,7 @@ function App() {
   }
   
   return (
-    <div className="App">
+    <div className="App" id="App">
 
       <div id='timerDiv'>
         <h1 id='time'>{currentTime}</h1>
