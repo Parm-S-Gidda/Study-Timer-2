@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Study-Timer-2/static/css/main.f23b515a.css",
-    "main.js": "/Study-Timer-2/static/js/main.0a1fc558.js",
+    "main.css": "/Study-Timer-2/static/css/main.00ab4627.css",
+    "main.js": "/Study-Timer-2/static/js/main.0d83def6.js",
     "static/js/453.824f5aa6.chunk.js": "/Study-Timer-2/static/js/453.824f5aa6.chunk.js",
     "static/media/background.jpg": "/Study-Timer-2/static/media/background.9b3e6543cfb7d55e667a.jpg",
     "index.html": "/Study-Timer-2/index.html",
-    "main.f23b515a.css.map": "/Study-Timer-2/static/css/main.f23b515a.css.map",
-    "main.0a1fc558.js.map": "/Study-Timer-2/static/js/main.0a1fc558.js.map",
+    "main.00ab4627.css.map": "/Study-Timer-2/static/css/main.00ab4627.css.map",
+    "main.0d83def6.js.map": "/Study-Timer-2/static/js/main.0d83def6.js.map",
     "453.824f5aa6.chunk.js.map": "/Study-Timer-2/static/js/453.824f5aa6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f23b515a.css",
-    "static/js/main.0a1fc558.js"
+    "static/css/main.00ab4627.css",
+    "static/js/main.0d83def6.js"
   ]
 }
