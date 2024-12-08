@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Study-Timer-2/static/css/main.176dabb0.css",
+    "main.css": "/Study-Timer-2/static/css/main.bba3304e.css",
     "main.js": "/Study-Timer-2/static/js/main.a8395394.js",
     "static/js/453.824f5aa6.chunk.js": "/Study-Timer-2/static/js/453.824f5aa6.chunk.js",
     "index.html": "/Study-Timer-2/index.html",
-    "main.176dabb0.css.map": "/Study-Timer-2/static/css/main.176dabb0.css.map",
+    "main.bba3304e.css.map": "/Study-Timer-2/static/css/main.bba3304e.css.map",
     "main.a8395394.js.map": "/Study-Timer-2/static/js/main.a8395394.js.map",
     "453.824f5aa6.chunk.js.map": "/Study-Timer-2/static/js/453.824f5aa6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.176dabb0.css",
+    "static/css/main.bba3304e.css",
     "static/js/main.a8395394.js"
   ]
 }
