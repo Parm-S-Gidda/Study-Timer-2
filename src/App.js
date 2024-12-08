@@ -97,17 +97,17 @@ function App() {
   const changeTimeDuration = () => {
 
     var currentBar = document.getElementById("App");
-    currentBar.style.filter = "invert(1)";
+    currentBar.style.background = "rgb(183, 183, 183)";
     setTimeout(() => {
-        currentBar.style.filter = "invert(0)";
+        currentBar.style.background = "white";
     }, 250); 
     
     setTimeout(() => {
-        currentBar.style.filter = "invert(1)";
+        currentBar.style.background = "rgb(183, 183, 183)";
     }, 500); 
     
     setTimeout(() => {
-        currentBar.style.filter = "invert(0)";
+        currentBar.style.background = "white";
     }, 750);
 
 
@@ -132,7 +132,7 @@ function App() {
   const updateBars = () => {
 
     let currentBar = document.getElementById("indic" + (period -1))
-    currentBar.style.backgroundColor = "rgba(255, 255, 255, 0.625)";
+    currentBar.style.backgroundColor = "rgba(54, 47, 47, 0.496)";
 
     if(period == 9){
       setPeriod(1)
@@ -155,7 +155,7 @@ function App() {
         for (let i = 1; i <= 8; i++) {
 
          currentBar = document.getElementById("indic" + i)
-          currentBar.style.backgroundColor = "rgba(162, 157, 157, 0.2)"
+          currentBar.style.backgroundColor = "rgba(240, 232, 232, 0.496)"
           
         }
        
@@ -196,11 +196,11 @@ function App() {
 
       <div id='buttonDiv'>
    
-        <button id='button'>
+        <button id='button' onClick={changeButton}>
 
         {buttonState === 0 ? (
        <img src={playButton} onClick={changeButton} id="plyabutton"></img>
-        ) : <img src={pauseButton} onClick={changeButton} id="pauseButton"></img>  }
+        ) : <img src={pauseButton}  id="pauseButton"></img>  }
      
         </button>
 
